@@ -1,0 +1,93 @@
+body {
+    font-family: Roboto;
+    background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+span {
+    background: #e74c4c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    /* by setting width to 0 it hides it  */
+    width: 0;
+    display: inline-block;
+    /* opacity set to 0 makes it transpareent. */
+    opacity: 0;
+}
+
+h1 {
+    background: #2980b9;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+ul {
+    /* removes bullet points from <ul> */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    /* background color is white */
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+
+/* span width increases from 0 to be shown */
+li:hover span {
+    width: 30px;
+    transition: 0.2s linear;
+    /* set opacity back to 1.0 to see it when hovered */
+    opacity: 1.0;
+}
+
+/* Every second <li> will have this background */
+li:nth-child(2n) {
+    background: #f7f7f7;
+}
+
+input {
+    font-size: 18px;
+    color: #2980b9;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    /* to make the input text flush with the list items beneath it */
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+/* input when we are focused. When clicked into the input */
+input:focus {
+    background: #fff;
+    border: 3px solid #2980b9;
+    /* removes the browser default outline around input */
+    outline: none;
+}
+
+.fa-plus {
+    float: right;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+#container {
+    width: 360px;
+    margin: 100px auto; /* centers the body horizontally */
+    background: #f7f7f7;
+    /* Instad of border, we have this light shadow */
+    box-shadow: 0 0 3px rgb(0, 0, 0, 0.1);
+}
